@@ -14,9 +14,9 @@
       <tr>
         <td><%= status.name %></td>
         <td><%= status.content %></td>
-        <td><%= link_to 'Show', status %></td>
-        <td><%= link_to 'Edit', edit_status_path(status) %></td>
-        <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td <button type="button" class="btn btn-success">Success </button><%= link_to 'Show', status %></td>
+        <td <button type="button" class="btn btn-warning">Warning </button><%= link_to 'Edit', edit_status_path(status) %></td>
+        <td <button type="button" class="btn btn-danger">Danger </button><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Status', new_status_path %>
+<em <button type="button" class="btn btn-inverse"></button><%= link_to 'New Status', new_status_path %></em>
